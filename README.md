@@ -37,22 +37,6 @@ export default Web3AuthDemo;
 and  add in your local-intercept.js this code 
 
 ```shell
-function localIntercept(targets) {
-    targets.of("@magento/venia-ui").routes.tap((routes) => {
-        routes.push({
-            name: "web3auth page",
-            pattern: "/web3auth",
-            exact: true,
-            path: require.resolve(
-                "../components/Web3AuthDemo/web3AuthDemo.js"
-            ),
-        });
-        return routes;
-    });
-}
-
-module.exports = localIntercept;
-
 
 /* local-intercept.js */
 
