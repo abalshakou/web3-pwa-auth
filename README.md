@@ -20,21 +20,7 @@ For work download and add extension like this :
  yarn add file:/path/to/local/folder 
 ```
 
-also you need add component in your src folder 
-
-```shell
-import React from "react";
-
-import Web3Auth from "Web3Auth";
-
-const Web3AuthDemo = () => {
-    return <Web3Auth  />;
-};
-
-export default Web3AuthDemo;
-```
-
-and  add in your local-intercept.js this code 
+  add in your local-intercept.js this code 
 
 ```shell
 
